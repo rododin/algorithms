@@ -1,5 +1,6 @@
 target
 workdir
+tmp
 .idea
 .classpath
 .project
@@ -9,3 +10,4 @@ workdir
 *.iws
 *.lnk
 *.log*
+*.tmp
