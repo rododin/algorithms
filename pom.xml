@@ -59,6 +59,24 @@
 		</pluginManagement>
 	</build>
 
+	<profiles>
+
+		<!-- The 'ramdisk' profile is useful if you like to speed up the project building process with a RAM Disk.
+				 However the real acceleration advantage depends on your disk caching.
+				 If your system caches the files well, and you have enough physical memory, your will NOT gain any major advantage.
+				 Also the RAM Disk is useful if your project is placed on an SSD drive,
+				 so with moving the Maven target folders onto the RAM Disk you can save the SSD resource.
+				 The path to the RAM Disk should be defined with the ${RAMDISK} (%RAMDisk%) environment variable.
+				 If you don't have any RAM Disk properly configured, do NOT use this profile.
+		 -->
+		<profile>
+			<id>ramdisk</id>
+			<build>
+				<directory>${env.RAMDISK}/temp/algorithms/${project.groupId}-${project.artifactId}/target</directory>
+			</build>
+		</profile>
+	</profiles>
+
 	<modules>
 		<module>modules/utils</module>
 		<module>modules/sort_algorithms</module>

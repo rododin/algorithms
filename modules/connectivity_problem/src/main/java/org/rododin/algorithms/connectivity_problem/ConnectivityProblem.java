@@ -44,33 +44,20 @@ public class ConnectivityProblem
     final Random R = new Random();
     final List<Pair<Integer, Integer>> pairs = new ArrayList<>(P);
 
-    //for (int i = 0; i < P; i++)
-    //{
-    //  final int f = R.nextInt(N);
-    //  int s;
-    //  do
-    //  {
-    //    s = R.nextInt(N);
-    //  } while (f == s);
-    //
-    //  final Pair<Integer, Integer> pair = Structures.createUnmodifiablePair(f, s);
-    //  pairs.add(pair);
-    //}
-    pairs.add(Structures.createUnmodifiablePair(5, 2));
-    pairs.add(Structures.createUnmodifiablePair(2, 0));
-    pairs.add(Structures.createUnmodifiablePair(8, 5));
-    pairs.add(Structures.createUnmodifiablePair(0, 8));
-    pairs.add(Structures.createUnmodifiablePair(8, 2));
-    pairs.add(Structures.createUnmodifiablePair(7, 5));
-    pairs.add(Structures.createUnmodifiablePair(9, 2));
-    pairs.add(Structures.createUnmodifiablePair(0, 3));
-    pairs.add(Structures.createUnmodifiablePair(4, 5));
-    pairs.add(Structures.createUnmodifiablePair(8, 9));
+    for (int i = 0; i < P; i++)
+    {
+      final int f = R.nextInt(N);
+      int s;
+      do
+      {
+        s = R.nextInt(N);
+      } while (f == s);
+
+      final Pair<Integer, Integer> pair = Structures.createUnmodifiablePair(f, s);
+      pairs.add(pair);
+    }
 
     final List<Pair<Integer, Integer>> uniquePairs = QuickFind.execute(N, pairs);
-
-    //for (Pair<Integer, Integer> pair : uniquePairs)
-    //  System.out.println(pair);
 
     final Iterator<Pair<Integer, Integer>> uniquePairsIterator = uniquePairs.iterator();
     Pair<Integer, Integer> uniquePair = null;

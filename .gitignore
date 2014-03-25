@@ -1,5 +1,6 @@
-.idea
 target
+workdir
+.idea
 .classpath
 .project
 .settings
