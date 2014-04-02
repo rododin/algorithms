@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Log4J 2.x Configuration File.
+  Please note, it is not applicable for Log4J 1.x.
+  Also please note, this configuration may be overridden by another log4j2.xml when provided for another Maven module
+  regardless of dependency on this module, or by another configuration file configured with the log4j.configurationFile
+  system property.
+-->
+
+<Configuration status="WARN">
+
+	<Properties>
+		<Property name="defaultLogLevel">info</Property>
+		<Property name="defaultLogFilename">./algorithms.log</Property>
+		<Property name="defaultLogPatternLayout">%d{yyyy.MM.dd-HH:mm:ss.SSS} [%t - %logger]: %-5level - %msg%n</Property>
+	</Properties>
+
+	<Appenders>
+		<Console name="STDOUT" target="SYSTEM_OUT">
+			<PatternLayout pattern="${defaultLogPatternLayout}"/>
+		</Console>
+
+		<File name="FILEOUT" fileName="${defaultLogFilename}" append="false">
+			<PatternLayout pattern="${defaultLogPatternLayout}"/>
+		</File>
+	</Appenders>
+
+	<Loggers>
+		<Logger name="org.rododin.algorithms" level="${defaultLogLevel}"/>
+
+		<Logger name="org.rododin.algorithms.LogAll"   level="all"  />
+		<Logger name="org.rododin.algorithms.LogTrace" level="trace"/>
+		<Logger name="org.rododin.algorithms.LogDebug" level="debug"/>
+		<Logger name="org.rododin.algorithms.LogInfo"  level="info" />
+		<Logger name="org.rododin.algorithms.LogWarn"  level="warn" />
+		<Logger name="org.rododin.algorithms.LogError" level="error"/>
+		<Logger name="org.rododin.algorithms.LogFatal" level="fatal"/>
+		<Logger name="org.rododin.algorithms.LogOff"   level="off"  />
+
+		<Root level="${defaultLogLevel}">
+			<AppenderRef ref="STDOUT"/>
+			<AppenderRef ref="FILEOUT"/>
+		</Root>
+	</Loggers>
+
+</Configuration>

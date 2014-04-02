@@ -53,9 +53,9 @@ public abstract class AbstractPair <First, Second>
     final Second second = getSecond();
 
     final StringBuilder sb = new StringBuilder();
-    sb.append("<").append(first);
+    sb.append("{").append(first);
     sb.append(", ").append(second);
-    sb.append('>');
+    sb.append('}');
     return sb.toString();
   }
 }

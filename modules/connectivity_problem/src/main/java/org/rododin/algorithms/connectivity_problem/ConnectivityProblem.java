@@ -10,6 +10,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
 
+import org.rododin.algorithms.Constants;
 import org.rododin.algorithms.structures.Pair;
 import org.rododin.algorithms.structures.Structures;
 
@@ -18,12 +19,13 @@ import org.rododin.algorithms.structures.Structures;
  * @author Rod Odin
  */
 public class ConnectivityProblem
+  implements Constants
 {
   public static void main(String[] args)
   {
     if (args.length != 2)
     {
-      System.err.println("Wrong arguments: " + Arrays.asList(args));
+      Log.error("Wrong arguments: {}", Arrays.asList(args));
       return;
     }
 
@@ -36,11 +38,11 @@ public class ConnectivityProblem
     }
     catch (NumberFormatException x)
     {
-      System.err.println("Integer arguments expected: " + Arrays.asList(args));
+      Log.error("Integer arguments expected: {}", Arrays.asList(args), x);
       return;
     }
 
-    System.out.println("Generating random pairs, P=" + P);
+    Log.info("Generating random pairs, P={}", P);
     final Random R = new Random();
     final List<Pair<Integer, Integer>> pairs = new ArrayList<>(P);
 
@@ -72,7 +74,7 @@ public class ConnectivityProblem
         uniquePairStr = uniquePair.toString();
         uniquePair = null;
       }
-      System.out.println(pair + "  --  " + (uniquePairStr != null ? uniquePairStr : "already connected"));
+      Log.info("{} -- {}", pair, uniquePairStr != null ? uniquePairStr : "already connected");
     }
   }
 }
