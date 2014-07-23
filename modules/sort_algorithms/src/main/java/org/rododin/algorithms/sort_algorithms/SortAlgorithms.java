@@ -6,6 +6,8 @@ package org.rododin.algorithms.sort_algorithms;
 
 import java.util.ArrayList;
 
+import org.rododin.algorithms.sort_algorithms.algorithms.BubbleSort;
+import org.rododin.algorithms.sort_algorithms.algorithms.BubbleSort2;
 import org.rododin.algorithms.sort_algorithms.algorithms.SelectionSort;
 
 /**
@@ -15,15 +17,16 @@ import org.rododin.algorithms.sort_algorithms.algorithms.SelectionSort;
  */
 public class SortAlgorithms
 {
-  public static final int DEF_DATA_SIZE = 50;
+  public static final int DEF_DATA_SIZE = 100;
   public static final int DEF_MAX_VALUE = 100;
 
 
   public static void main(String[] args)
   {
+    sortBy(new BubbleSort());
+    sortBy(new BubbleSort2());
     sortBy(new SelectionSort());
     //sortBy(new InsertionSort());
-    //sortBy(new BubbleSort());
     //sortBy(new ShellSort());
   }
 
@@ -35,14 +38,17 @@ public class SortAlgorithms
     Utils.provideRandomData(array, DEF_MAX_VALUE);
     Utils.provideRandomData(list, DEF_DATA_SIZE, DEF_MAX_VALUE);
 
-    System.out.println("Initial array: " + Utils.toString(array));
+    System.out.println("== " + algorithm.getClass().getSimpleName() + " ==========");
+    System.out.println("Initial: arrSize=" + array.length + ", array=" + Utils.toString(array));
     int itCount = algorithm.sort(array);
-    System.out.println("Sorted: itCount=" + itCount + ", array=" + Utils.toString(array));
+    System.out.println("Sorted : itCount=" + itCount + ", array=" + Utils.toString(array));
 
-    System.out.println("\n");
+    System.out.println();
 
-    System.out.println("Initial list: " + list);
+    System.out.println("Initial: lstSize=" + list.size() + ", list=" + list);
     itCount = algorithm.sort(list);
-    System.out.println("Sorted: itCount=" + itCount + ", list=" + list);
+    System.out.println("Sorted : itCount=" + itCount + ", list=" + list);
+
+    System.out.println();
   }
 }

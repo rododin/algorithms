@@ -21,7 +21,7 @@ public class SelectionSort
   {
     int itCounter = 0;
     final int n = array.length - 1;
-    for (int i = 0; i < n; i++, itCounter++)
+    for (int i = 0; i < n; i++)
     {
       int min = i;
       for (int j = i + 1; j < array.length; j++, itCounter++)
@@ -39,7 +39,7 @@ public class SelectionSort
     int itCounter = 0;
     final int m = list.size();
     final int n = m - 1;
-    for (int i = 0; i < n; i++, itCounter++)
+    for (int i = 0; i < n; i++)
     {
       int min = i;
       for (int j = i + 1; j < m; j++, itCounter++)
