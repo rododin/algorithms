@@ -18,14 +18,19 @@ import org.rododin.algorithms.sort_algorithms.Utils;
 public class BubbleSort
   implements SortAlgorithm
 {
-  public int sort(int[] array)
+  public int sort(final int[] array)
+  {
+    return sort(array, 0, array.length);
+  }
+
+  public int sort(int[] array, int first, int afterLast)
   {
     int itCounter = 0;
 
-    for (int i = 0; i < array.length; i++)
+    for (int i = first; i < afterLast; i++)
     {
-      final int J = array.length - i - 1;
-      for(int j = 0; j < J; j++, itCounter++)
+      final int J = afterLast - i - 1;
+      for(int j = first; j < J; j++, itCounter++)
       {
         final int jj = j + 1;
         if (array[j] > array[jj])
@@ -38,12 +43,17 @@ public class BubbleSort
 
   public <T extends Comparable<T>> int sort(List<T> list)
   {
+    return sort(list, 0, list.size());
+  }
+
+  public <T extends Comparable<T>> int sort(List<T> list, int first, int afterLast)
+  {
     int itCounter = 0;
 
-    for (int i = 0; i < list.size(); i++)
+    for (int i = first; i < afterLast; i++)
     {
-      final int J = list.size() - i - 1;
-      for(int j = 0; j < J; j++, itCounter++)
+      final int J = afterLast - i - 1;
+      for(int j = first; j < J; j++, itCounter++)
       {
         final int jj = j + 1;
         if (list.get(j).compareTo(list.get(jj)) > 0)

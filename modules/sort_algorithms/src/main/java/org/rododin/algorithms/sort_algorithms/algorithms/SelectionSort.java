@@ -17,14 +17,19 @@ import org.rododin.algorithms.sort_algorithms.Utils;
 public class SelectionSort
   implements SortAlgorithm
 {
-  public int sort(int[] array)
+  public int sort(final int[] array)
+  {
+    return sort(array, 0, array.length);
+  }
+
+  public int sort(int[] array, int first, int afterLast)
   {
     int itCounter = 0;
-    final int n = array.length - 1;
-    for (int i = 0; i < n; i++)
+    final int n = afterLast - 1;
+    for (int i = first; i < n; i++)
     {
       int min = i;
-      for (int j = i + 1; j < array.length; j++, itCounter++)
+      for (int j = i + 1; j < afterLast; j++, itCounter++)
       {
         if (array[j] < array[min])
           min = j;
@@ -36,13 +41,17 @@ public class SelectionSort
 
   public <T extends Comparable<T>> int sort(List<T> list)
   {
+    return sort(list, 0, list.size());
+  }
+
+  public <T extends Comparable<T>> int sort(List<T> list, int first, int afterLast)
+  {
     int itCounter = 0;
-    final int m = list.size();
-    final int n = m - 1;
-    for (int i = 0; i < n; i++)
+    final int n = afterLast - 1;
+    for (int i = first; i < n; i++)
     {
       int min = i;
-      for (int j = i + 1; j < m; j++, itCounter++)
+      for (int j = i + 1; j < afterLast; j++, itCounter++)
       {
         if (list.get(j).compareTo(list.get(min)) < 0)
           min = j;

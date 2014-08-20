@@ -8,6 +8,7 @@ import java.util.ArrayList;
 
 import org.rododin.algorithms.sort_algorithms.algorithms.BubbleSort;
 import org.rododin.algorithms.sort_algorithms.algorithms.BubbleSort2;
+import org.rododin.algorithms.sort_algorithms.algorithms.MergeSort;
 import org.rododin.algorithms.sort_algorithms.algorithms.QuickSort;
 import org.rododin.algorithms.sort_algorithms.algorithms.SelectionSort;
 
@@ -19,7 +20,7 @@ import org.rododin.algorithms.sort_algorithms.algorithms.SelectionSort;
 public class SortAlgorithms
 {
   public static final int DEF_DATA_SIZE = 50;
-  public static final int DEF_MAX_VALUE = 100;
+  public static final int DEF_MAX_VALUE = 50;
 
 
   public static void main(String[] args)
@@ -28,6 +29,7 @@ public class SortAlgorithms
     sortBy(new BubbleSort2());
     sortBy(new SelectionSort());
     sortBy(new QuickSort());
+    sortBy(new MergeSort(10, null));
     //sortBy(new InsertionSort());
     //sortBy(new ShellSort());
   }

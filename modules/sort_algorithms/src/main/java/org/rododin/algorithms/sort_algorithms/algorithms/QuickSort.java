@@ -16,9 +16,14 @@ import org.rododin.algorithms.sort_algorithms.Utils;
 public class QuickSort
   implements SortAlgorithm
 {
-  public int sort(int[] array)
+  public int sort(final int[] array)
   {
-    return doSort(array, 0, array.length-1, 0);
+    return sort(array, 0, array.length);
+  }
+
+  public int sort(int[] array, int first, int afterLast)
+  {
+    return doSort(array, first, afterLast - 1, 0);
   }
 
   private int doSort(int[] array, int first, int last, int itCounter)
@@ -64,6 +69,11 @@ public class QuickSort
   }
 
   public <T extends Comparable<T>> int sort(List<T> list)
+  {
+    return sort(list, 0, list.size());
+  }
+
+  public <T extends Comparable<T>> int sort(final List<T> list, final int first, final int afterLast)
   {
     int itCounter = 0;
 

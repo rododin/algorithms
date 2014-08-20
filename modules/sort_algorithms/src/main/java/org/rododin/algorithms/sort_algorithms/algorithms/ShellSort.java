@@ -16,7 +16,12 @@ import org.rododin.algorithms.sort_algorithms.SortAlgorithm;
 public class ShellSort
   implements SortAlgorithm
 {
-  public int sort(int[] array)
+  public int sort(final int[] array)
+  {
+    return sort(array, 0, array.length);
+  }
+
+  public int sort(int[] array, int first, int afterLast)
   {
     int itCounter = 0;
 
@@ -27,6 +32,11 @@ public class ShellSort
   }
 
   public <T extends Comparable<T>> int sort(List<T> list)
+  {
+    return sort(list, 0, list.size());
+  }
+
+  public <T extends Comparable<T>> int sort(List<T> list, int first, int afterLast)
   {
     int itCounter = 0;
 
