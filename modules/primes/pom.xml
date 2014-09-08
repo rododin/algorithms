@@ -10,10 +10,10 @@
 		<relativePath>../../pom.xml</relativePath>
 	</parent>
 
-	<groupId>org.rododin.primaries</groupId>
-	<artifactId>primaries</artifactId>
+	<groupId>org.rododin.primes</groupId>
+	<artifactId>primes</artifactId>
 	<packaging>jar</packaging>
-	<name>Algorithms :: Primary Numbers</name>
+	<name>Algorithms :: Prime Numbers</name>
 
 	<properties>
 	</properties>
@@ -29,8 +29,8 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>org.rododin.algorithms.primaries.Primaries</mainClass>
-							<packageName>org.rododin.algorithms.primaries</packageName>
+							<mainClass>org.rododin.algorithms.primes.Primes</mainClass>
+							<packageName>org.rododin.algorithms.primes</packageName>
 							<addClasspath>true</addClasspath>
 						</manifest>
 						<manifestEntries>
@@ -38,7 +38,7 @@
 							<url>http://rododin.org</url>
 							<Built-By>Rod Odin (Nikolay Chebotaryov)</Built-By>
 							<implementation-version>${project.version}</implementation-version>
-							<Bundle-Name>Algorithms :: Primary Numbers</Bundle-Name>
+							<Bundle-Name>Algorithms :: Prime Numbers</Bundle-Name>
 							<Bundle-Vendor>RodOdin.org</Bundle-Vendor>
 						</manifestEntries>
 					</archive>

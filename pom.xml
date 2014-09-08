@@ -80,7 +80,7 @@
 	<modules>
 		<module>modules/utils</module>
 		<module>modules/sort_algorithms</module>
-		<module>modules/primaries</module>
+		<module>modules/primes</module>
 		<module>modules/connectivity_problem</module>
 	</modules>
 

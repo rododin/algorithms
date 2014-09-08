@@ -1,23 +1,23 @@
 /*
- * Primaries.java
+ * Primes.java
  */
 
-package org.rododin.algorithms.primaries;
+package org.rododin.algorithms.primes;
 
 /**
  * Description.
  * @author Rod Odin
  */
-public class Primaries
+public class Primes
 {
 // The Main Routine ----------------------------------------------------------------------------------------------------
 
   public static void main(String[] args)
   {
-    final StandardFindPrimary standardFindPrimary = new StandardFindPrimary();
+    final StandardFindPrime standardFindPrime = new StandardFindPrime();
 
     int num;
-    while ((num = standardFindPrimary.next()) <= 10870)
+    while ((num = standardFindPrime.next()) <= 10870)
     {
       System.out.println(num);
     }

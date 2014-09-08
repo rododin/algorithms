@@ -2,7 +2,7 @@
  * Utils.java
  */
 
-package org.rododin.algorithms.primaries;
+package org.rododin.algorithms.primes;
 
 import java.util.Collection;
 
@@ -12,17 +12,17 @@ import java.util.Collection;
  */
 public class Utils
 {
-  public static final int[] FIRST_PRIMARIES = new int[] {2, 3, 5, 7};
-  public static final int[] NEXT_PRIMARY_ENDS = new int[] {1, 3, 7, 9};
+  public static final int[] FIRST_PRIMES = new int[] {2, 3, 5, 7};
+  public static final int[] NEXT_PRIME_ENDS = new int[] {1, 3, 7, 9};
 
-  public static boolean isPrimary(int number)
+  public static boolean isPrime(int number)
   {
     //if (number <= 0)
     //  return false;
     //if (number == 1)
     //  return false;
 
-    for (int div : FIRST_PRIMARIES)
+    for (int div : FIRST_PRIMES)
     {
       if (number % div == 0)
         return false;
@@ -31,7 +31,7 @@ public class Utils
     final int max = (int)Math.sqrt(number);
     for (int base = 10; base <= max; base += 10)
     {
-      for (int off : NEXT_PRIMARY_ENDS)
+      for (int off : NEXT_PRIME_ENDS)
       {
         if (number % (base + off) == 0)
           return false;
@@ -41,7 +41,7 @@ public class Utils
     return true;
   }
 
-  public static boolean isPrimary(int number, Collection<Integer> knownPrimaries)
+  public static boolean isPrime(int number, Collection<Integer> knownPrimes)
   {
     //if (number <= 0)
     //  return false;
@@ -49,7 +49,7 @@ public class Utils
     //  return false;
 
     final int max = (int)Math.sqrt(number);
-    for (int div : knownPrimaries)
+    for (int div : knownPrimes)
     {
       if (div > max)
         break;
