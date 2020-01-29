@@ -10,5 +10,5 @@ package org.rododin.algorithms.primes;
  */
 public interface FindPrime
 {
-  int next();
+	int next();
 }

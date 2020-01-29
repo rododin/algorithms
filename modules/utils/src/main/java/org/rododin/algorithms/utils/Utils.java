@@ -8,7 +8,7 @@ import org.rododin.algorithms.Constants;
 
 /**
  * Description.
- * @author Rod Odin
+ * @author Nikolay Chebotaryov (Rod Odin)
  */
 public class Utils
   implements Constants

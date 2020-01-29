@@ -11,7 +11,7 @@ import java.util.ResourceBundle;
 
 /**
  * Description.
- * @author Rod Odin
+ * @author Nikolay Chebotaryov (Rod Odin)
  */
 public abstract class DateTimeUtils
 {
