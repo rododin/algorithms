@@ -1,10 +1,16 @@
 algorithms
-==========
+---
 
-The project introduces all basic algorithm and data structure implementations in Java and can be used for algorithm and data structure studying.
-I am starting it as a part of my academy work at the role of assistant professor at Donetsk National Technical University, Ukraine.
-With time I plan to add here all basic algorithm implementations covered in the books of Robert Sedgewick, Steven Skiena and Donald Knuth.
+The project introduces all basic algorithm and data structure implementations in Java and can be used learning.
 
+It has been started in 2014 in context of my academy work on the role of assistant professor at 
+Donetsk National Technical University, Ukraine. 
+Then it was frozen for a long period of time once I was too busy with my full time job/projects.
+Now (January 2020), despite I'm still busy with many things, I'd like to continue here in order of recovering and 
+improving my own algorithm/data structure backgorund...
+
+There was (and still is) a plan to add here all basic algorithm and data structure implementations covered in well known 
+books of the subject + probably something more. 
 For now I plan to use the following books in my work over the project:
 
 1. ISBN 0-201-36120-5. Robert Sedgewick. Algorithms in Java. Parts 1-4. 3rd Edition. Addison-Wesley, 2002.
@@ -14,10 +20,10 @@ For now I plan to use the following books in my work over the project:
 5. ISBN 0-201-89683-4. Knuth, D. E. The Art of Computer Programming. Volume 1: Fundamental Algorithms. 3rd ed. Addison-Wesley, 1997.
 6. ISBN 0-201-89684-2. Knuth, D. E. The Art of Computer Programming. Volume 2: Seminumerical Algorithms. 3rd ed. Addison-Wesley, 1998.
 7. ISBN 0-201-89685-0. Knuth, D. E. The Art of Computer Programming. Volume 3: Sorting and Searching. 2nd ed. Addison-Wesley, 1998.
+8. ISBN 9781617292231. Aditya Y. Bhargava. Grokking algorithms. Manning Publications Co, 2016.
 
-Probably other authors and books will be used in the work as well. Appropriate references will be added.
+If more sources will be used, appropriate references will be added.
 
-Some good implementations will be probably added by my students.
+---
 
---
-Nikolay (Mykola) Chebotar(y)ov (Rod Odin), March 24th, 2014.
+Nikolay Chebotaryov (Rod Odin), March 24th, 2014.
