@@ -10,7 +10,7 @@ import java.util.List;
 import org.rododin.algorithms.structures.Pair;
 
 /**
- * Description.
+ * TODO: Add description.
  * @author Nikolay Chebotaryov (Rod Odin)
  */
 public final class QuickFind

@@ -7,7 +7,7 @@ package org.rododin.algorithms.structures.impl;
 import org.rododin.algorithms.structures.Pair;
 
 /**
- * Description.
+ * TODO: Add description.
  * @author Nikolay Chebotaryov (Rod Odin)
  */
 public final class UnmodifiablePair <First, Second>

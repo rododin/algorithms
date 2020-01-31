@@ -10,7 +10,7 @@ import org.rododin.algorithms.sort_algorithms.SortAlgorithm;
 import org.rododin.algorithms.sort_algorithms.Utils;
 
 /**
- * Description.
+ * TODO: Add description.
  * @author Nikolay Chebotaryov (Rod Odin)
  */
 public class MergeSort

@@ -8,7 +8,7 @@ import org.rododin.algorithms.structures.impl.StandardPair;
 import org.rododin.algorithms.structures.impl.UnmodifiablePair;
 
 /**
- * Description.
+ * TODO: Add description.
  * @author Nikolay Chebotaryov (Rod Odin)
  */
 public final class Structures

@@ -15,7 +15,7 @@ import org.rododin.algorithms.structures.Pair;
 import org.rododin.algorithms.structures.Structures;
 
 /**
- * Description.
+ * TODO: Add description.
  * @author Nikolay Chebotaryov (Rod Odin)
  */
 public class ConnectivityProblem

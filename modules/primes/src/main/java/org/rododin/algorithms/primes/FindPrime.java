@@ -5,7 +5,7 @@
 package org.rododin.algorithms.primes;
 
 /**
- * Description.
+ * TODO: Add description.
  * @author Rod Odin
  */
 public interface FindPrime
