@@ -36,7 +36,7 @@
 						<manifestEntries>
 							<mode>development</mode>
 							<url>http://rododin.org</url>
-							<Built-By>Nikolay Chebotaryov (Rod Odin)</Built-By>
+							<Built-By>Rod Odin (Nikolay Chebotaryov)</Built-By>
 							<implementation-version>${project.version}</implementation-version>
 							<Bundle-Name>Algorithms :: Misc</Bundle-Name>
 							<Bundle-Vendor>RodOdin.org</Bundle-Vendor>

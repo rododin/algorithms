@@ -1,0 +1,11 @@
+50  # n, aka the budget
+
+2   # m, aka the shop count
+20  # bundleQuantities[0], aka the number of notebooks in the bundle at the shop 0
+19  # bundleQuantities[1], aka the number of notebooks in the bundle at the shop 1
+
+2   # m, aka the shop count
+24  # bundleCosts[0], aka the cost of the bundle at the shop 0
+20  # bundleCosts[1], aka the cost of the bundle at the shop 1
+
+40  # expected result (maximal number of notebooks)
