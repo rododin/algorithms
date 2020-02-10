@@ -1,23 +1,19 @@
-/*
+package org.rododin.algorithms.connectivity_problem;/*
  * ConnectivityTest.java
  */
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.Random;
 
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
-import org.rododin.algorithms.connectivity_problem.QuickFind;
-import org.rododin.algorithms.measure.Period;
 import org.rododin.algorithms.structures.Pair;
 import org.rododin.algorithms.structures.Structures;
 
 /**
- * Description.
+ * TODO: Add description.
  * @author Nikolay Chebotaryov (Rod Odin)
  */
 @RunWith(JUnit4.class)

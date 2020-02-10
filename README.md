@@ -1,9 +1,9 @@
 algorithms
 ---
 
-The project introduces all basic algorithm and data structure implementations in Java and can be used learning.
+The project introduces all basic algorithm and data structure implementations in Java and purposed for learning.
 
-It has been started in 2014 in context of my academy work on the role of assistant professor at 
+It had been started in 2014 in context of my academy work on the role of assistant professor at 
 Donetsk National Technical University, Ukraine. 
 Then it was frozen for a long period of time once I was too busy with my full time job/projects.
 Now (January 2020), despite I'm still busy with many things, I'd like to continue here in order of recovering and 
@@ -26,4 +26,4 @@ If more sources will be used, appropriate references will be added.
 
 ---
 
-Nikolay Chebotaryov (Rod Odin), March 24th, 2014.
+Nikolay Chebotaryov (aka Rod Odin), 2014-2020.

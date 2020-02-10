@@ -1,0 +1,72 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<artifactId>algorithms</artifactId>
+		<groupId>org.rododin.algorithms</groupId>
+		<version>1.0-SNAPSHOT</version>
+		<relativePath>../../pom.xml</relativePath>
+	</parent>
+
+	<groupId>org.rododin.algorithms</groupId>
+	<artifactId>misc</artifactId>
+	<packaging>jar</packaging>
+	<name>Algorithms :: Misc</name>
+
+	<properties>
+	</properties>
+
+	<build>
+		<defaultGoal>install</defaultGoal>
+
+		<plugins>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<configuration>
+					<archive>
+						<manifest>
+							<mainClass>org.rododin.algorithms.misc.Misc</mainClass>
+							<packageName>org.rododin.algorithms.misc</packageName>
+							<addClasspath>true</addClasspath>
+						</manifest>
+						<manifestEntries>
+							<mode>development</mode>
+							<url>http://rododin.org</url>
+							<Built-By>Nikolay Chebotaryov (Rod Odin)</Built-By>
+							<implementation-version>${project.version}</implementation-version>
+							<Bundle-Name>Algorithms :: Misc</Bundle-Name>
+							<Bundle-Vendor>RodOdin.org</Bundle-Vendor>
+						</manifestEntries>
+					</archive>
+				</configuration>
+			</plugin>
+
+		</plugins>
+
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+			</resource>
+		</resources>
+	</build>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.rododin.algorithms</groupId>
+			<artifactId>utils</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.13</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+</project>

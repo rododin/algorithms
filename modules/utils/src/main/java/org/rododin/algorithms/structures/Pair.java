@@ -5,7 +5,7 @@
 package org.rododin.algorithms.structures;
 
 /**
- * Description.
+ * TODO: Add description.
  * @author Nikolay Chebotaryov (Rod Odin)
  */
 public interface Pair <First, Second>

@@ -10,7 +10,7 @@ import java.util.concurrent.atomic.AtomicLong;
 import org.rododin.algorithms.utils.DateTimeUtils;
 
 /**
- * Description.
+ * TODO: Add description.
  * @author Nikolay Chebotaryov (Rod Odin)
  */
 public final class Period
