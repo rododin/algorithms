@@ -6,15 +6,15 @@ package org.rododin.algorithms.sort_algorithms.algorithms;
 
 import java.util.List;
 
-import org.rododin.algorithms.sort_algorithms.SortAlgorithm;
-import org.rododin.algorithms.sort_algorithms.Utils;
+import org.rododin.algorithms.sort_algorithms.IntSortAlgorithm;
+import org.rododin.algorithms.sort_algorithms.IntSortUtils;
 
 /**
  * TODO: Add description.
  * @author Nikolay Chebotaryov (Rod Odin)
  */
 public class QuickSort
-	implements SortAlgorithm
+	implements IntSortAlgorithm
 {
 	public int sort(final int[] array)
 	{
@@ -50,7 +50,7 @@ public class QuickSort
 			{
 				if (array[i] > array[j])
 				{
-					Utils.swap(array, i, j);
+					IntSortUtils.swap(array, i, j);
 					//itCounter++;
 				}
 				i++;

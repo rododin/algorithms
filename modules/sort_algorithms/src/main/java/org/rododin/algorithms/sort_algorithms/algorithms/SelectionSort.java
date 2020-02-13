@@ -6,27 +6,22 @@ package org.rododin.algorithms.sort_algorithms.algorithms;
 
 import java.util.List;
 
-import org.rododin.algorithms.sort_algorithms.SortAlgorithm;
-import org.rododin.algorithms.sort_algorithms.Utils;
+import org.rododin.algorithms.sort_algorithms.IntSortAlgorithm;
+import org.rododin.algorithms.sort_algorithms.IntSortUtils;
 
 /**
- * Implements the selection sort algorithm.
+ * Implements the classical Selection Sort algorithm.
  *
  * @author Nikolay Chebotaryov (Rod Odin)
  */
 public class SelectionSort
-	implements SortAlgorithm
+	implements IntSortAlgorithm
 {
-	public int sort(final int[] array)
-	{
-		return sort(array, 0, array.length);
-	}
-
 	public int sort(int[] array, int first, int afterLast)
 	{
 		int itCounter = 0;
-		final int n = afterLast - 1;
-		for (int i = first; i < n; i++)
+		final int last = afterLast - 1;
+		for (int i = first; i < last; i++)
 		{
 			int min = i;
 			for (int j = i + 1; j < afterLast; j++, itCounter++)
@@ -34,21 +29,16 @@ public class SelectionSort
 				if (array[j] < array[min])
 					min = j;
 			}
-			Utils.swap(array, i, min);
+			IntSortUtils.swap(array, i, min);
 		}
 		return itCounter;
-	}
-
-	public <T extends Comparable<T>> int sort(List<T> list)
-	{
-		return sort(list, 0, list.size());
 	}
 
 	public <T extends Comparable<T>> int sort(List<T> list, int first, int afterLast)
 	{
 		int itCounter = 0;
-		final int n = afterLast - 1;
-		for (int i = first; i < n; i++)
+		final int last = afterLast - 1;
+		for (int i = first; i < last; i++)
 		{
 			int min = i;
 			for (int j = i + 1; j < afterLast; j++, itCounter++)
@@ -56,7 +46,7 @@ public class SelectionSort
 				if (list.get(j).compareTo(list.get(min)) < 0)
 					min = j;
 			}
-			Utils.swap(list, i, min);
+			IntSortUtils.swap(list, i, min);
 		}
 		return itCounter;
 	}

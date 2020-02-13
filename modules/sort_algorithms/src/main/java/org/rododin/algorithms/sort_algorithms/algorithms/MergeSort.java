@@ -6,20 +6,19 @@ package org.rododin.algorithms.sort_algorithms.algorithms;
 
 import java.util.List;
 
-import org.rododin.algorithms.sort_algorithms.SortAlgorithm;
-import org.rododin.algorithms.sort_algorithms.Utils;
+import org.rododin.algorithms.sort_algorithms.IntSortAlgorithm;
 
 /**
  * TODO: Add description.
  * @author Nikolay Chebotaryov (Rod Odin)
  */
 public class MergeSort
-	implements SortAlgorithm
+	implements IntSortAlgorithm
 {
 	private final int nextAlgChunkSize;
-	private final SortAlgorithm chunkSortAlg;
+	private final IntSortAlgorithm chunkSortAlg;
 
-	public MergeSort(int nextAlgChunkSize, SortAlgorithm chunkSortAlg)
+	public MergeSort(int nextAlgChunkSize, IntSortAlgorithm chunkSortAlg)
 	{
 		this.nextAlgChunkSize = nextAlgChunkSize;
 		this.chunkSortAlg = chunkSortAlg;

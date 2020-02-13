@@ -13,7 +13,7 @@
 	<Properties>
 		<Property name="defaultLogLevel">info</Property>
 		<Property name="defaultLogFilename">./algorithms.log</Property>
-		<Property name="defaultLogPatternLayout">%d{yyyy.MM.dd-HH:mm:ss.SSS} [%t - %logger]: %-5level - %msg%n</Property>
+		<Property name="defaultLogPatternLayout">%d{yyyy.MM.dd-HH:mm:ss.SSS}: %-5level - %msg%n</Property>
 	</Properties>
 
 	<Appenders>
