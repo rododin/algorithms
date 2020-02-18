@@ -1,14 +1,14 @@
-package org.rododin.algorithms.connectivity_problem.office;
+package org.rododin.algorithms.misc.office_space;
 
 import org.junit.Assert;
 import org.junit.Test;
 
 /**
- * Unit Tests for <code>{@link Office}</code>.
+ * Unit Test(s) for <code>{@link OfficeSpace}</code>.
  *
  * @author Nikolay Chebotaryov (Rod Odin)
  */
-public class OfficeTest
+public class OfficeSpaceTest
 {
 	private static final int[][] OFFICE_AREA_0 =
 		{
@@ -114,15 +114,15 @@ public class OfficeTest
 	@Test
 	public void testCountOfficesQuickImplementation()
 	{
-		Assert.assertEquals(OFFICE_RESULT_0, Office.countOfficesQuickImplementation(OFFICE_AREA_0));
-		Assert.assertEquals(OFFICE_RESULT_1, Office.countOfficesQuickImplementation(OFFICE_AREA_1));
-		Assert.assertEquals(OFFICE_RESULT_2, Office.countOfficesQuickImplementation(OFFICE_AREA_2));
-		Assert.assertEquals(OFFICE_RESULT_3, Office.countOfficesQuickImplementation(OFFICE_AREA_3));
-		Assert.assertEquals(OFFICE_RESULT_4, Office.countOfficesQuickImplementation(OFFICE_AREA_4));
-		Assert.assertEquals(OFFICE_RESULT_5, Office.countOfficesQuickImplementation(OFFICE_AREA_5));
-		Assert.assertEquals(OFFICE_RESULT_6, Office.countOfficesQuickImplementation(OFFICE_AREA_6));
-		Assert.assertEquals(OFFICE_RESULT_7, Office.countOfficesQuickImplementation(OFFICE_AREA_7));
-		Assert.assertEquals(OFFICE_RESULT_8, Office.countOfficesQuickImplementation(OFFICE_AREA_8));
-		Assert.assertEquals(OFFICE_RESULT_9, Office.countOfficesQuickImplementation(OFFICE_AREA_9));
+		Assert.assertEquals(OFFICE_RESULT_0, OfficeSpace.countOfficesQuickImplementation(OFFICE_AREA_0));
+		Assert.assertEquals(OFFICE_RESULT_1, OfficeSpace.countOfficesQuickImplementation(OFFICE_AREA_1));
+		Assert.assertEquals(OFFICE_RESULT_2, OfficeSpace.countOfficesQuickImplementation(OFFICE_AREA_2));
+		Assert.assertEquals(OFFICE_RESULT_3, OfficeSpace.countOfficesQuickImplementation(OFFICE_AREA_3));
+		Assert.assertEquals(OFFICE_RESULT_4, OfficeSpace.countOfficesQuickImplementation(OFFICE_AREA_4));
+		Assert.assertEquals(OFFICE_RESULT_5, OfficeSpace.countOfficesQuickImplementation(OFFICE_AREA_5));
+		Assert.assertEquals(OFFICE_RESULT_6, OfficeSpace.countOfficesQuickImplementation(OFFICE_AREA_6));
+		Assert.assertEquals(OFFICE_RESULT_7, OfficeSpace.countOfficesQuickImplementation(OFFICE_AREA_7));
+		Assert.assertEquals(OFFICE_RESULT_8, OfficeSpace.countOfficesQuickImplementation(OFFICE_AREA_8));
+		Assert.assertEquals(OFFICE_RESULT_9, OfficeSpace.countOfficesQuickImplementation(OFFICE_AREA_9));
 	}
 }

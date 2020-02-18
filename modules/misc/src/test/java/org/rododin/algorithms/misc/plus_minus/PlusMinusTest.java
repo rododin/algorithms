@@ -2,11 +2,10 @@
  * PlusMinusTest.java
  */
 
-package org.rododin.algorithms.misc.org.rododin.algorithms.misc.plus_minus;
+package org.rododin.algorithms.misc.plus_minus;
 
 import org.junit.Assert;
 import org.junit.Test;
-import org.rododin.algorithms.misc.plus_minus.PlusMinus;
 
 /**
  * Unit Test(s) for <code>{@link PlusMinus}</code>.

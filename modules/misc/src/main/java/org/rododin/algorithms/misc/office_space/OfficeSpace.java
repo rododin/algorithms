@@ -1,4 +1,4 @@
-package org.rododin.algorithms.connectivity_problem.office;
+package org.rododin.algorithms.misc.office_space;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -43,7 +43,7 @@ import java.util.Map;
  *
  * @author Nikolay Chebotaryov (Rod Odin)
  */
-public class Office
+public class OfficeSpace
 {
 	/**
 	 * That's my quick implementation I passed to <a href="https://developers.turing.com/dashboard/algorithm_challenge">Turing</a> within 30-45 mins.

@@ -2,13 +2,12 @@
  * CompareTripletsTest.java
  */
 
-package org.rododin.algorithms.misc.org.rododin.algorithms.misc.compare_triplets;
+package org.rododin.algorithms.misc.compare_triplets;
 
 import java.util.Arrays;
 
 import org.junit.Assert;
 import org.junit.Test;
-import org.rododin.algorithms.misc.compare_triplets.CompareTriplets;
 
 /**
  * Unit Test(s) for <code>{@link CompareTriplets}</code>.
