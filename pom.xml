@@ -87,6 +87,7 @@
 		<module>modules/primes</module>
 		<module>modules/connectivity_problem</module>
 		<module>modules/misc</module>
+		<module>modules/ws</module>
 	</modules>
 
 	<repositories>
