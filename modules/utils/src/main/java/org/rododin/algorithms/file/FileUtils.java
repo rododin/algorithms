@@ -60,8 +60,7 @@ public class FileUtils
 		}
 		catch (Exception x)
 		{
-			LogError.error("File or Resource read error", x);
-			return Stream.empty();
+			throw new RuntimeException("File or Resource read error", x);
 		}
 	}
 }

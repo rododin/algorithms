@@ -1,6 +1,7 @@
 package org.rododin.algorithms.misc;
 
 import org.rododin.algorithms.Constants;
+import org.rododin.algorithms.misc.staircase.StairCase;
 
 /**
  * TODO: Add description.
@@ -12,6 +13,9 @@ public class Misc
 {
 	public static void main(String[] args)
 	{
-		//BudgetShopping
+		StairCase.stairCase(0);
+		StairCase.stairCase(1);
+		StairCase.stairCase(5);
+		StairCase.stairCase(10);
 	}
 }
