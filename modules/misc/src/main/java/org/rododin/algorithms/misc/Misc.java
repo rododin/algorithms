@@ -1,7 +1,7 @@
 package org.rododin.algorithms.misc;
 
 import org.rododin.algorithms.Constants;
-import org.rododin.algorithms.misc.staircase.StairCase;
+import org.rododin.algorithms.misc.time_conversion.TimeConversion;
 
 /**
  * TODO: Add description.
@@ -13,9 +13,6 @@ public class Misc
 {
 	public static void main(String[] args)
 	{
-		StairCase.stairCase(0);
-		StairCase.stairCase(1);
-		StairCase.stairCase(5);
-		StairCase.stairCase(10);
+		TimeConversion.printTimeConversion("07:05:45PM");
 	}
 }
