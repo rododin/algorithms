@@ -14,5 +14,11 @@ public class Misc
 	public static void main(String[] args)
 	{
 		TimeConversion.printTimeConversion("07:05:45PM");
+		TimeConversion.printTimeConversion("12:00:00AM");
+		TimeConversion.printTimeConversion("12:00:00PM");
+
+		TimeConversion.printTimeConversionOld("07:05:45PM");
+		TimeConversion.printTimeConversionOld("12:00:00AM");
+		TimeConversion.printTimeConversionOld("12:00:00PM");
 	}
 }
