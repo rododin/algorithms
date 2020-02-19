@@ -10,7 +10,8 @@ import org.rododin.algorithms.file.FileUtils;
 import org.rododin.algorithms.function.TriFunction;
 
 /**
- * TODO: Add description.
+ * Unit Test(s) for <code>{@link BudgetShopping}</code>.
+ *
  * @author Nikolay Chebotaryov (Rod Odin)
  */
 public class BudgetShoppingTest
