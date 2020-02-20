@@ -1,7 +1,10 @@
 package org.rododin.algorithms.misc;
 
+import java.util.Arrays;
+
 import org.rododin.algorithms.Constants;
 import org.rododin.algorithms.misc.day_of_the_programmer.DayOfTheProgrammer;
+import org.rododin.algorithms.misc.grading_students.GradingStudents;
 
 /**
  * TODO: Add description.
@@ -13,17 +16,6 @@ public class Misc
 {
 	public static void main(String[] args)
 	{
-		DayOfTheProgrammer.printDayOfProgrammer(1700);
-		DayOfTheProgrammer.printDayOfProgrammer(1800);
-		DayOfTheProgrammer.printDayOfProgrammer(1900);
-		DayOfTheProgrammer.printDayOfProgrammer(1917);
-		DayOfTheProgrammer.printDayOfProgrammer(1918);
-		DayOfTheProgrammer.printDayOfProgrammer(1919);
-		DayOfTheProgrammer.printDayOfProgrammer(1984);
-		DayOfTheProgrammer.printDayOfProgrammer(2000);
-		DayOfTheProgrammer.printDayOfProgrammer(2100);
-		DayOfTheProgrammer.printDayOfProgrammer(2200);
-		DayOfTheProgrammer.printDayOfProgrammer(2400);
-		DayOfTheProgrammer.printDayOfProgrammer(2700);
+		GradingStudents.printGradingStudents(Arrays.asList(4, 7, 9, 28, 38, 44, 58, 83, 87, 92, 99, 100));
 	}
 }
