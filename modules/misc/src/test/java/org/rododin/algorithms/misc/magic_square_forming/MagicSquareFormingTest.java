@@ -56,4 +56,26 @@ public class MagicSquareFormingTest
 			{3, 4, 9},
 		}));
 	}
+
+	@Test
+	public void test05()
+	{
+		Assert.assertEquals(21, MagicSquareForming.printFormingMagicSquare(new int[][]
+		{
+			{2, 9, 8},
+			{4, 2, 7},
+			{5, 6, 7},
+		}));
+	}
+
+	@Test
+	public void test06()
+	{
+		Assert.assertEquals(18, MagicSquareForming.printFormingMagicSquare(new int[][]
+		{
+			{6, 1, 2},
+			{7, 2, 6},
+			{5, 6, 2},
+		}));
+	}
 }
