@@ -5,7 +5,6 @@
 package org.rododin.algorithms.hackerrank.easy;
 
 import java.util.Arrays;
-import java.util.stream.Collectors;
 
 /**
  * <a href="https://www.hackerrank.com/challenges/apple-and-orange/problem">
@@ -23,7 +22,6 @@ public class AppleAndOrange
 		return rv;
 	}
 
-	// a -- d --> s<-- H -->t <------ b
 	public static int[] countApplesAndOranges(int s, int t, int a, int b, int[] apples, int[] oranges)
 	{
 		int appleHouseIntersection = 0;
