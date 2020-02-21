@@ -1,4 +1,4 @@
-package org.rododin.algorithms.misc;
+package org.rododin.algorithms.hackerrank;
 
 import org.rododin.algorithms.Constants;
 
@@ -7,7 +7,7 @@ import org.rododin.algorithms.Constants;
  *
  * @author Nikolay Chebotaryov (Rod Odin)
  */
-public class Misc
+public class HackerRank
 	implements Constants
 {
 	public static void main(String[] args)
