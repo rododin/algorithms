@@ -8,7 +8,8 @@ import org.junit.Assert;
 import org.junit.Test;
 
 /**
- * Description.
+ * Unit Test(s) for <code>{@link MagicSquareForming}</code>.
+ *
  * @author Nikolay Chebotaryov (Rod Odin)
  */
 public class MagicSquareFormingTest
