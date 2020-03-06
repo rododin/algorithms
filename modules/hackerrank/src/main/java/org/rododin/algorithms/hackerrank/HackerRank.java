@@ -1,7 +1,8 @@
 package org.rododin.algorithms.hackerrank;
 
+import java.util.Scanner;
+
 import org.rododin.algorithms.Constants;
-import org.rododin.algorithms.hackerrank.medium.Encryption;
 
 /**
  * Just an app stub for quick testing.
@@ -13,11 +14,24 @@ public class HackerRank
 {
 	public static void main(String[] args)
 	{
-		Encryption.printEncryption("");
-		Encryption.printEncryption("      ");
-		Encryption.printEncryption("have a nice day");
-		Encryption.printEncryption("feed the dog    ");
-		Encryption.printEncryption("  chill out  ");
-		Encryption.printEncryption("if man was meant to stay on the ground god would have given us roots");
+		isPalindrome();
+	}
+
+	public static void isPalindrome()
+	{
+		final Scanner scan = new Scanner(System.in);
+		final String s = scan.nextLine();
+		scan.close();
+
+		String result = "yes";
+		for (int i = 0, j = s.length() - 1; i < j; i++, j--)
+		{
+			if (s.charAt(i) != s.charAt(j))
+			{
+				result = "no";
+				break;
+			}
+		}
+		System.out.println(result);
 	}
 }
