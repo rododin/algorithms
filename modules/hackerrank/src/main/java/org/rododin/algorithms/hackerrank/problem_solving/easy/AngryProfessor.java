@@ -15,7 +15,7 @@ public class AngryProfessor
 	 *
 	 * @param threshold the minimal number of students to be arrived on time to get the class continued,
 	 *                  where {@code 0 ≤ threshold ≤ times.size()}
-	 * @param times     the student arrival times, where {@code time[i] <= 0} means the student arrived on time,
+	 * @param times     the student arrival times, where {@code time[i] ≤ 0} means the student arrived on time,
 	 *                  where {@code time[i]} is any possible {@code int} number and {@code 0 ≤ times.size()}
 	 * @return          {@code "YES"} if the class is cancelled, {@code "NO"} otherwise
 	 */
