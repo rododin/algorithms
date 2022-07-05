@@ -10,7 +10,6 @@ import java.util.Collections;
 import java.util.List;
 
 import org.junit.Assert;
-import org.junit.Ignore;
 import org.junit.Test;
 
 /**
@@ -71,7 +70,7 @@ public class CutTheSticksTest
 		doTestLargeGeneratedArray(1_000);
 	}
 
-	@Test @Ignore // It's ignored because the execution time is extremely long, and finally it leads to StackOverflowException because 1M recursion is not possible even on 64-bit machines
+	@Test
 	public void testGeneratedArray1M()
 	{
 		doTestLargeGeneratedArray(1_000_000);
@@ -79,6 +78,11 @@ public class CutTheSticksTest
 
 	private void doTestLargeGeneratedArray(int n)
 	{
+		// Generating the worst case first:
+		//  - each element is different
+		//  - the test array is randomly shuffled
+		//  - on the other hand, it's easy to generate the expected result
+
 		final List<Integer> testArray = new ArrayList<>(n);
 		final List<Integer> resultArray = new ArrayList<>(n);
 		for (int i = 0; i < n; i++)
@@ -86,6 +90,7 @@ public class CutTheSticksTest
 			testArray.add(i + 1);
 			resultArray.add(n - i);
 		}
+		Collections.shuffle(testArray);
 		Assert.assertEquals(resultArray, CutTheSticks.cutTheSticks(testArray));
 	}
 }
