@@ -9,7 +9,7 @@ later it had been frozen again as on Covid waves I was again busy a lot with my 
 [Chess.com](https://chess.com)) working on many optimizations and new features. 
 And then, in addition to that, starting since July 2020, I was busy really a lot with my house building. 
 Now, in March 2025, I'd like to revisit it again with a hope to start contributing here again at least from time to time.
-My main purpose here is to practicing and improving my background in the area of fundamental computer science areas. 
+My main purpose here is practicing and improving my background in the area of fundamental computer science areas. 
 
 There was (and still is) a plan to add here all well-known algorithm and data structure implementations,
 as well as many well-known problem solutions.
