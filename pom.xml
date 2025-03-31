@@ -7,78 +7,55 @@
 	<groupId>org.rododin.algorithms</groupId>
 	<artifactId>algorithms</artifactId>
 	<packaging>pom</packaging>
-	<version>1.0-SNAPSHOT</version>
+	<version>1.2-SNAPSHOT</version>
 	<name>Algorithms</name>
 
 	<properties>
 	</properties>
 
 	<build>
-		<!--<plugins>-->
-			<!--<plugin>-->
-				<!--<artifactId>maven-compiler-plugin</artifactId>-->
-				<!--<configuration>-->
-					<!--<source>1.8</source>-->
-					<!--<target>1.8</target>-->
-				<!--</configuration>-->
-			<!--</plugin>-->
-		<!--</plugins>-->
 		<pluginManagement>
 			<plugins>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-clean-plugin</artifactId>
-					<version>3.1.0</version>
+					<version>3.4.0</version>
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-compiler-plugin</artifactId>
-					<version>3.8.1</version>
+					<version>3.14.0</version>
 					<configuration>
-						<source>1.8</source>
-						<target>1.8</target>
+						<release>21</release>
+						<source>21</source>
+						<target>21</target>
 					</configuration>
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-resources-plugin</artifactId>
-					<version>3.1.0</version>
+					<version>3.3.1</version>
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-jar-plugin</artifactId>
-					<version>3.1.0</version>
+					<version>3.4.2</version>
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-install-plugin</artifactId>
-					<version>3.0.0-M1</version>
+					<version>3.1.4</version>
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-dependency-plugin</artifactId>
-					<version>3.1.1</version>
+					<version>3.8.1</version>
 				</plugin>
 			</plugins>
 		</pluginManagement>
 	</build>
 
 	<profiles>
-
-		<!-- The 'ramdisk' profile is useful if you like to speed up the project building process with a RAM Disk.
-				 However the real acceleration advantage depends on your disk caching.
-				 If your system caches the files well, and you have enough physical memory, your will NOT gain any major advantage.
-				 Also the RAM Disk is useful if your project is placed on an SSD drive,
-				 so with moving the Maven target folders onto the RAM Disk you can save the SSD resource.
-				 The path to the RAM Disk should be defined with the ${RAMDISK} (%RAMDisk%) environment variable.
-				 If you don't have any RAM Disk properly configured, do NOT use this profile.
-		 -->
-		<profile>
-			<id>ramdisk</id>
-			<build>
-				<directory>${env.RAMDISK}/temp/algorithms/${project.groupId}-${project.artifactId}/target</directory>
-			</build>
-		</profile>
 	</profiles>
 
 	<modules>
