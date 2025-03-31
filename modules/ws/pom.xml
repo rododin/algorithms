@@ -7,7 +7,7 @@
 	<parent>
 		<groupId>org.rododin.algorithms</groupId>
 		<artifactId>algorithms</artifactId>
-		<version>1.0-SNAPSHOT</version>
+		<version>1.2-SNAPSHOT</version>
 		<relativePath>../../pom.xml</relativePath>
 	</parent>
 	-->
@@ -21,7 +21,7 @@
 
 	<groupId>org.rododin.algorithms</groupId>
 	<artifactId>ws</artifactId>
-	<version>1.0-SNAPSHOT</version>
+	<version>1.2-SNAPSHOT</version>
 	<packaging>war</packaging>
 	<name>Algorithms :: Web Service</name>
 	<description>Algorithms :: Web Service - a REST Web Service based on Spring Boot 2 WebFlux</description>
