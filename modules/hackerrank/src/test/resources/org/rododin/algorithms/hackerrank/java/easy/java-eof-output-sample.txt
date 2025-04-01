@@ -1,0 +1,23 @@
+1 The challenge here is to read  lines of input until you reach EOF, then number and print all  lines of content.
+2 
+3 Hint: Java's Scanner.hasNext() method is helpful for this problem.
+4 
+5 Input Format
+6 
+7 Read some unknown  lines of input from stdin(System.in) until you reach EOF; each line of input contains a non-empty String.
+8 
+9 Output Format
+10 
+11 For each line, print the line number, followed by a single space, and then the line content received as input.
+12 
+13 Sample Input
+14 
+15 Hello world
+16 I am a file
+17 Read me until end-of-file.
+18 
+19 Sample Output
+20 
+21 1 Hello world
+22 2 I am a file
+23 3 Read me until end-of-file.
