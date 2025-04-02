@@ -67,6 +67,7 @@ public class JavaEOFTest
 
 	private void doTest(InputStream testStream, InputStream expectedResultStream)
 	{
+		final InputStream systemStdIn = System.in;
 		final PrintStream systemStdOut = System.out;
 		System.setIn(testStream);
 		final ByteArrayOutputStream output = new ByteArrayOutputStream(64 * 1024);
@@ -74,6 +75,7 @@ public class JavaEOFTest
 		JavaEOF.enumerateStdInLines();
 		final String producedResult = output.toString();
 		System.setOut(systemStdOut);
+		System.setIn(systemStdIn);
 		System.out.printf(producedResult);
 
 		final String expectedResult =
