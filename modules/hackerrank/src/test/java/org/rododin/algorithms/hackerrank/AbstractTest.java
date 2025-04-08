@@ -32,8 +32,13 @@ public abstract class AbstractTest
 		Assert.assertEquals(resultExpectedOnStdOut.trim(), producedResult.trim());
 	}
 
-	public static String stringArrayToStringByLine(String... strings)
+	public static String stringsToStringByLine(String... strings)
 	{
 		return Arrays.stream(strings).collect(Collectors.joining(System.lineSeparator()));
+	}
+
+	public static String booleansToStringByLine(Boolean... booleans)
+	{
+		return Arrays.stream(booleans).map(Object::toString).collect(Collectors.joining(System.lineSeparator()));
 	}
 }

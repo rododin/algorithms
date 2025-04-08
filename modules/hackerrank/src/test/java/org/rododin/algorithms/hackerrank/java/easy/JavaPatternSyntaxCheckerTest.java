@@ -14,9 +14,9 @@ public class JavaPatternSyntaxCheckerTest
 	@Test
 	public void testSimple()
 	{
-		doTest( stringArrayToStringByLine("3", "([A-Z])(.+)", "[AZ[a-z](a-z)", "batcatpat(nat")
+		doTest( stringsToStringByLine("3", "([A-Z])(.+)", "[AZ[a-z](a-z)", "batcatpat(nat")
 		      , () -> JavaPatternSyntaxChecker.main(null)
-		      , stringArrayToStringByLine("Valid", "Invalid", "Invalid")
+		      , stringsToStringByLine("Valid", "Invalid", "Invalid")
 		);
 	}
 }
