@@ -16,7 +16,7 @@ public class JavaStringTokensTest
 	{
 		doTest( "He is a very very good boy, isn't he?"
 		      , () -> JavaStringTokens.main(null)
-		      , stringArrayToStringByLine("10", "He", "is", "a", "very", "very", "good", "boy", "isn", "t", "he")
+		      , stringsToStringByLine("10", "He", "is", "a", "very", "very", "good", "boy", "isn", "t", "he")
 		      );
 	}
 
@@ -25,7 +25,7 @@ public class JavaStringTokensTest
 	{
 		doTest( "           YES      leading spaces        are valid,    problemsetters are         evillllll"
 		      , () -> JavaStringTokens.main(null)
-		      , stringArrayToStringByLine("8", "YES", "leading", "spaces", "are", "valid", "problemsetters", "are", "evillllll")
+		      , stringsToStringByLine("8", "YES", "leading", "spaces", "are", "valid", "problemsetters", "are", "evillllll")
 		      );
 	}
 }
