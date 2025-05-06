@@ -61,6 +61,7 @@
 	<modules>
 		<module>modules/utils</module>
 		<module>modules/sort_algorithms</module>
+		<module>modules/data_structures</module>
 		<module>modules/primes</module>
 		<module>modules/connectivity_problem</module>
 		<module>modules/misc</module>
