@@ -4,8 +4,9 @@ import org.junit.Test;
 import org.rododin.algorithms.hackerrank.AbstractTest;
 
 /**
- * TODO: Add description.
- * @author Nikolay Chebotaryov
+ * Unit Test(s) for {@link Java2DArray}.
+ *
+ * @author Nikolay Chebotaryov (Rod Odin)
  */
 public class Java2DArrayTest
 	extends AbstractTest
