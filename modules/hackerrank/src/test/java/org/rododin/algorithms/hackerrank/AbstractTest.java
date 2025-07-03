@@ -34,7 +34,7 @@ public abstract class AbstractTest
 
 	public static String stringsToStringByLine(String... strings)
 	{
-		return Arrays.stream(strings).collect(Collectors.joining(System.lineSeparator()));
+		return Arrays.stream(strings).flatMap(s -> Arrays.stream(s.split("\\r\\n|\\r|\\n"))).collect(Collectors.joining(System.lineSeparator()));
 	}
 
 	public static String booleansToStringByLine(Boolean... booleans)
