@@ -4,7 +4,7 @@ import org.junit.Test;
 import org.rododin.algorithms.hackerrank.AbstractTest;
 
 /**
- * Unit Test(s) for <code>{@link JavaSortTest}</code>.
+ * Unit Test(s) for <code>{@link JavaSort}</code>.
  *
  * @author Nikolay Chebotaryov (Rod Odin)
  */
