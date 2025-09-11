@@ -66,6 +66,7 @@
 		<module>modules/connectivity_problem</module>
 		<module>modules/misc</module>
 		<module>modules/hackerrank</module>
+		<module>modules/leetcode</module>
 		<!--<module>modules/ws</module>-->
 	</modules>
 
