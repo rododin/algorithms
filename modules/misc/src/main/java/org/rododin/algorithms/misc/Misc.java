@@ -1,6 +1,5 @@
 package org.rododin.algorithms.misc;
 
-import java.util.concurrent.Callable;
 import java.util.concurrent.atomic.AtomicReference;
 
 import org.rododin.algorithms.Constants;

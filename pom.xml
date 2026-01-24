@@ -68,6 +68,7 @@
 		<module>modules/misc</module>
 		<module>modules/hackerrank</module>
 		<module>modules/leetcode</module>
+		<module>modules/yandex</module>
 		<!--<module>modules/ws</module>-->
 	</modules>
 
