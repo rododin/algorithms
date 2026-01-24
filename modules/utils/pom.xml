@@ -10,7 +10,6 @@
 		<relativePath>../../pom.xml</relativePath>
 	</parent>
 
-	<groupId>org.rododin.algorithms</groupId>
 	<artifactId>utils</artifactId>
 	<packaging>jar</packaging>
 	<name>Algorithms :: Utilities</name>

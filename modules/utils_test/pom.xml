@@ -10,9 +10,9 @@
 		<relativePath>../../pom.xml</relativePath>
 	</parent>
 
-	<artifactId>misc</artifactId>
+	<artifactId>utils_test</artifactId>
 	<packaging>jar</packaging>
-	<name>Algorithms :: Misc</name>
+	<name>Algorithms :: Utilities for testing</name>
 
 	<properties>
 	</properties>
@@ -28,8 +28,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>org.rododin.algorithms.misc.Misc</mainClass>
-							<packageName>org.rododin.algorithms.misc</packageName>
+							<packageName>org.rododin.algorithms.utils</packageName>
 							<addClasspath>true</addClasspath>
 						</manifest>
 						<manifestEntries>
@@ -37,7 +36,7 @@
 							<url>http://rododin.org</url>
 							<Built-By>Rod Odin (Nikolay Chebotaryov)</Built-By>
 							<implementation-version>${project.version}</implementation-version>
-							<Bundle-Name>Algorithms :: Misc</Bundle-Name>
+							<Bundle-Name>Algorithms :: Utilities for testing</Bundle-Name>
 							<Bundle-Vendor>RodOdin.org</Bundle-Vendor>
 						</manifestEntries>
 					</archive>
@@ -61,16 +60,9 @@
 			<version>${project.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>org.rododin.algorithms</groupId>
-			<artifactId>utils_test</artifactId>
-			<version>${project.version}</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.13</version>
-			<scope>test</scope>
 		</dependency>
 	</dependencies>
 

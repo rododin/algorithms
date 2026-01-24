@@ -10,7 +10,6 @@
 		<relativePath>../../pom.xml</relativePath>
 	</parent>
 
-	<groupId>org.rododin.algorithms</groupId>
 	<artifactId>hackerrank</artifactId>
 	<packaging>jar</packaging>
 	<name>Algorithms :: HackerRank</name>
@@ -61,6 +60,12 @@
 			<groupId>org.rododin.algorithms</groupId>
 			<artifactId>utils</artifactId>
 			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.rododin.algorithms</groupId>
+			<artifactId>utils_test</artifactId>
+			<version>${project.version}</version>
+			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>

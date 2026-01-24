@@ -60,6 +60,7 @@
 
 	<modules>
 		<module>modules/utils</module>
+		<module>modules/utils_test</module>
 		<module>modules/sort_algorithms</module>
 		<module>modules/data_structures</module>
 		<module>modules/primes</module>
