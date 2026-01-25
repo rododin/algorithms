@@ -5,11 +5,11 @@ import java.util.Locale;
 /**
  * Implements some arithmetic examples to show the bit depth overflow.
  */
-public class BitDepthOverflow
+public class ArithmeticExperiments
 {
 	public static final Locale NUM_LOCALE = Locale.forLanguageTag("de-CH"); // Apostrophe-based thousands separator
 
-	public static void someIntArithmeticCornerCases()
+	public static void someBitDepthOverflowCornerCases()
 	{
 		System.out.println("Arithmetic overflow on addition:");
 		int i = 2_000_000_000;
@@ -32,7 +32,10 @@ public class BitDepthOverflow
 		System.out.printf(NUM_LOCALE, "Longs   : 2 * %,d + 2 * %,d = %,14d\n", minI, i, sumMinIM);
 
 		System.out.println();
+	}
 
+	public static void rightShiftAnalysis()
+	{
 		int n0 = 0xFFFFFFFF; // -1
 		int n1 = n0 >> 4;
 		int n2 = n0 >>> 2;
@@ -40,6 +43,24 @@ public class BitDepthOverflow
 		System.out.println("0xFFFFFFFF >>  4 = " + n1);
 		System.out.println("0xFFFFFFFF >>> 2 = " + n2);
 
+		int p = Integer.MAX_VALUE;
+		p <<= 1;
+
+		System.out.println("0x7FFFFFFF << 1 = " + p);
+
 		System.out.println();
+
+		int bitField = 0x00000000;
+		System.out.printf("DECIMAL: %10d, HEXADECIMAL: %08X, BINARY: %32s\n", bitField, bitField, Integer.toBinaryString(bitField));
+		bitField = 0xFFFFFFFF;
+		System.out.printf("DECIMAL: %10d, HEXADECIMAL: %08X, BINARY: %32s\n", bitField, bitField, Integer.toBinaryString(bitField));
+		bitField >>= 1;
+		System.out.printf("DECIMAL: %10d, HEXADECIMAL: %08X, BINARY: %32s\n", bitField, bitField, Integer.toBinaryString(bitField));
+		bitField >>>= 1;
+		System.out.printf("DECIMAL: %10d, HEXADECIMAL: %08X, BINARY: %32s\n", bitField, bitField, Integer.toBinaryString(bitField));
+
+		System.out.printf("DECIMAL: %10d, HEXADECIMAL: %08X, BINARY: %32s\n", n2, n2, Integer.toBinaryString(n2));
+		System.out.printf("DECIMAL: %10d, HEXADECIMAL: %08X, BINARY: %32s\n", p, p, Integer.toBinaryString(p));
 	}
+
 }
