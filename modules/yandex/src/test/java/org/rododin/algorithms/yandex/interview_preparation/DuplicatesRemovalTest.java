@@ -1,6 +1,6 @@
 package org.rododin.algorithms.yandex.interview_preparation;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.rododin.algorithms.tests.AbstractTest;
 
 /**
