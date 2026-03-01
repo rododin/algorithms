@@ -63,4 +63,41 @@ public class JavaAnagrams
 			});
 		return counters.isEmpty();
 	}
+
+	public static boolean isAnagramLatinSmallLetter(String s, String t)
+	{
+		if (s.length() != t.length())
+			return false;
+
+		int[] counters = new int[26];
+		for (int i = 0; i < s.length(); i++)
+		{
+			counters[s.charAt(i) - 'a']++;
+			counters[t.charAt(i) - 'a']--;
+		}
+		int counter = 0;
+		for (int i = 0; i < 26; i++)
+			counter = counters[i] != 0 ? counter + 1 : counter;
+		return counter == 0;
+	}
+
+	public static boolean isAnagramLatinSmallLettersWithBitMarker(String s, String t)
+	{
+		if (s.length() != t.length())
+			return false;
+
+		int[] counters = new int[26];
+		int bitMarker = 0;
+		for (int i = 0; i < s.length(); i++)
+		{
+			final int si = s.charAt(i) - 'a';
+			counters[si]++;
+			bitMarker = counters[si] == 0 ? bitMarker & ~(1 << si) : bitMarker | (1 << si);
+
+			final int ti = t.charAt(i) - 'a';
+			counters[ti]--;
+			bitMarker = counters[ti] == 0 ? bitMarker & ~(1 << ti) : bitMarker | (1 << ti);
+		}
+		return bitMarker == 0;
+	}
 }

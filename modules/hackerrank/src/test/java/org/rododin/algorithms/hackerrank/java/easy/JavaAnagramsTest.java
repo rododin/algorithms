@@ -51,4 +51,31 @@ public class JavaAnagramsTest
 	{
 		Assert.assertTrue(JavaAnagrams.isAnagram("aabbccddxyz1234567890++--АБВэюя", "яюэ+-xyz0987654321abcabcdd-+ВБА"));
 	}
+
+	@Test
+	public void test05()
+	{
+		Assert.assertTrue(JavaAnagrams.isAnagramLatinSmallLetter("sakura", "arukas"));
+	}
+
+
+	@Test
+	public void test06()
+	{
+		Assert.assertTrue(JavaAnagrams.isAnagramLatinSmallLettersWithBitMarker("sakura", "arukas"));
+	}
+
+	@Test
+	public void test07()
+	{
+		Assert.assertFalse(JavaAnagrams.isAnagramLatinSmallLetter("xaaddy", "xbbccy"));
+	}
+
+
+	@Test
+	public void test08()
+	{
+		Assert.assertFalse(JavaAnagrams.isAnagramLatinSmallLettersWithBitMarker("xaaddy", "xbbccy"));
+	}
+
 }

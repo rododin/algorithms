@@ -33,4 +33,32 @@ public class ConsecutiveUnitsTest
 			)
 		);
 	}
+
+	@Test
+	public void test2()
+	{
+		doTest(
+			stringsToStringByLine(
+				"""
+				10
+				1
+				0
+				1
+				1
+				1
+				1
+				0
+				1
+				1
+				1
+				"""
+			),
+			() -> ConsecutiveUnits.main(null),
+			stringsToStringByLine(
+				"""
+				4
+				"""
+			)
+		);
+	}
 }
